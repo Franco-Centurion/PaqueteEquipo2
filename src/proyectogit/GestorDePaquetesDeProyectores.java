@@ -29,5 +29,12 @@ public class GestorDePaquetesDeProyectores {
     public void agregarPaquete(PaqueteProyectores paqueteNuevo){
     Paquetes.add(paqueteNuevo);
     }
-    
+    PaqueteProyectores GestorDePaquetesDeProyectores(int codPaq){ 
+       for(int i=0;i<Paquetes.size();i++){
+       if(Paquetes.get(i).getCodPaqueteDeProyectos()==codPaq){
+       return Paquetes.get(i);}
+       }
+        return null;
+    }
 }
+
